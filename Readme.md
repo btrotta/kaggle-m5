@@ -1,6 +1,6 @@
 # Kaggle M5 competition: Walmart store forecasting
 
-Top 4% solution for the Kaggle M5 competition. The competition requires prediction store sales of individual
+Top 4% solution for the Kaggle M5 (Accuracy) competition. The competition requires predicting store sales of individual
 items over a prediction period of 28 days.
 
 ## Modelling approach
