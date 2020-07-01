@@ -16,7 +16,7 @@ so that the `n`-day-ahead model is trained on data that has been lagged by `n` d
 this post https://www.kaggle.com/c/m5-forecasting-accuracy/discussion/144067#),
 I decided that the recursive approach was only performing well on the training period by coincidence.
 
-I noticed that in the test period, there are very few new products (i.e. product that have not been sold 
+I noticed that in the test period, there are very few new products (i.e. products that have not been sold 
 before the test period). So I excluded from the training set rows before the first sale date of a product in a 
 store, and also excluded these rows when calculating aggregate features.
 
@@ -30,6 +30,7 @@ levels of aggregation. For the aggregated features, I took the mean of sales at 
  - item and store
  - item (aggregated over all stores)
  - dept id and store id
+ 
  The idea of this was that the higher levels of aggregation provide a less noisy view of item-level and store-level trends.
 
 Specifically, the features are:
